@@ -13,7 +13,7 @@
   <parameters>
     <parameter>
       <name>P_JOB_NAME</name>
-      <default_value>load</default_value>
+      <default_value>test-deploy-job</default_value>
       <description/>
     </parameter>
     <parameter>
@@ -419,7 +419,7 @@
       <description/>
       <type>SET_VARIABLES</type>
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/properties/${P_PROJECT_NAME}_${P_JOB_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/properties/${P_PROJECT_NAME}-${P_JOB_NAME}.properties</filename>
       <file_variable_type>JVM</file_variable_type>
       <fields>
       </fields>
@@ -453,7 +453,7 @@
       <name>fe-job.properties</name>
       <description/>
       <type>FILE_EXISTS</type>
-      <filename>${CONFIG_DIR}/properties/${P_PROJECT_NAME}_${P_JOB_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/properties/${P_PROJECT_NAME}-${P_JOB_NAME}.properties</filename>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
@@ -535,10 +535,10 @@ JOB NAME - ${P_JOB_NAME}
   </hops>
   <notepads>
     <notepad>
-      <note>Running BEFORE DEVELOP.</note>
+      <note>Running BEFORE LOCAL DEVELOP.</note>
       <xloc>480</xloc>
       <yloc>64</yloc>
-      <width>174</width>
+      <width>217</width>
       <heigth>24</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>

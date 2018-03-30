@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sharedobjects>
   <connection>
+    <name>etl-control</name>
+    <server>${JOB_BD_HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${JOB_BD}</database>
+    <port>5432</port>
+    <username>${JOB_BD_USER}</username>
+    <password>${JOB_BD_PASSWORD}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+
+  <connection>
     <name>dw-biologia</name>
     <server>${BD_HOST}</server>
     <type>MYSQL</type>
